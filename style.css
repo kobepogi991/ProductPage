@@ -1,0 +1,257 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+*{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+#main{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 5px 10px 30px rgba(0,0,0,0.2);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	background-color: #FFFFFF;
+}
+.logo img{
+	height: 45px;
+}
+nav ul{
+	display: flex;
+}
+nav ul li a{
+	height: 40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #585b5b;
+	letter-spacing: 1px;
+}
+nav ul li a:hover{
+	background-color: gray;
+	color: #FFFFFF;
+	box-shadow: 5px 10px 30px rgba(64, 198, 196, 0.3);
+	transition: all ease 0.2s;
+}
+.model img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	margin-top: 50px;
+}
+#content p{
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+}
+#specs{
+	max-width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.container{
+	position: absolute;
+	max-width: 80%;
+	left: 10%;
+	margin-top: 100px;
+}
+.spec-text h1{
+	font-family: 'Lexend Mega', cursive;
+	font-size: 30px;
+	font-weight: bolder;
+	text-align: center;	
+	letter-spacing: 2px;
+	color: #34404e;
+}
+.spec-text p{
+	font-family: 'Lexend Mega', sans-serif;
+	font-size: 40px;
+	margin-left: 20px;
+}
+.table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.table table{
+	table-layout: fixed;
+	width: 100%;
+}
+.table td, th{
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+.table tr:nth-child(even){background-color: #f2f2f2;}
+.table tr:hover{background-color: #ddd;}
+.table caption{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+#features{
+	font-family: 'Ubuntu', sans-serif;
+	max-width: 80%;
+	margin-left: 10%;
+}
+.feat-container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.feat-title{
+	width: 100%;
+	padding-top: 40px;
+	margin-bottom: -13%;
+	z-index: 1;
+}
+.feat-title h2{
+	font-size: 45px;
+	font-weight: 900;
+	color: #34404e;
+	font-family: 'Ubuntu', sans-serif;
+}
+.feat-title span{
+	color: #eb0a1e;
+}
+figure{
+	position: relative;
+	text-align: center;
+}
+.feat-container figure{
+	margin: 0;
+}
+.feat-container span, h3, p{
+	margin: 0;
+}
+.mid-left-dark{
+	left: 5%;
+	text-align: left;
+	position: absolute;
+	margin-top: 40%;
+}
+.mid-left-dark span{
+	font-size: 1.2vw;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-family: 'Signika', sans-serif
+}
+.mid-left-dark h3{
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	font-size: 2vw;
+}
+.mid-left-dark p{
+	font-size: 1vw;
+	font-weight: normal;
+	font-family: 'Signika', sans-serif
+}
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+figure:not(:first-of-type){
+	margin-top: -1.41%
+}
+figure{
+	position: relative;
+	text-align: center;
+}
+.btm-right-light{
+	right: 5%;
+	left: auto;
+	text-align: right;
+	bottom: 30%;
+	color: #fff;
+}
+figure figcaption{
+	max-width: 50%;
+	position: absolute;
+}
+figure figcaption span{
+	font-size: 1.2vw;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: 'Signika', sans-serif;
+}
+figure figcaption h3{
+	letter-spacing: 5px;
+	font-size: 2vw;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+figure figcaption p{
+	font-size: 1vw;
+	font-weight: normal;
+	font-family: 'Signika', sans-serif
+}
+.img-fluid{
+	margin-top: auto;
+	margin-top: 17px;
+	height: auto;
+}
+.mid-left-light{
+	left: 5%;
+	text-align: left;
+	margin: 0;
+	color: #fff;
+}
+.mid-right-light{
+	text-align: right;
+	right: 5%;
+	color: #fff;
+	top: 50%;
+}
+.top-left-light{
+	left: 50px;
+	right: auto;
+	text-align: left;
+	top: 10%;
+	color: #fff;
+}
+.top-right-dark{
+	top: 10%;
+	left: auto;
+	text-align: right;
+	right: 5%;
+	color: #000;
+}
+@media(max-width: 900px){
+	nav{
+		justify-content: space-between;
+		height: 65px;
+		padding: 0px 30px;
+	}
+	.logo img{
+		height: 35px;
+	}
+	.menu{
+		display: none;
+	}
+}
